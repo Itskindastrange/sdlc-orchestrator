@@ -36,6 +36,11 @@ npx skills add github:Itskindastrange/sdlc-orchestrator
 
 When prompted to choose which skills to install, press **spacebar** to select, and select **all** of them.
 
+> **Tip:** if you have multiple AI agents installed (Claude Code, Cursor, Copilot), the installer may default to the wrong one. Force Claude Code explicitly:
+> ```bash
+> npx skills add github:Itskindastrange/sdlc-orchestrator --agent=claude-code
+> ```
+
 ### Step 3 — Verify
 
 Open Claude Code and check these skills are listed:
@@ -46,6 +51,50 @@ Open Claude Code and check these skills are listed:
 Quick smoke test — start a new chat and say: `"let's build a new feature"` → `sdlc-orchestrator` should trigger.
 
 > Full dependency breakdown: see [DEPENDENCIES.md](./DEPENDENCIES.md)
+
+---
+
+## Troubleshooting
+
+**Skills installed but not showing up in Claude Code?**
+
+If `npx skills add` ran but `sdlc-orchestrator` and friends don't appear, the installer likely mapped them to a different agent (Cursor, GitHub Copilot) instead of Claude Code.
+
+**1. Diagnose — see where the skills landed and which agent they were assigned to:**
+
+```bash
+npx skills list
+```
+
+If you see `Agents: GitHub Copilot` (or anything other than Claude Code) next to your skill path, migrate the files manually.
+
+**2. Migrate to the Claude skills directory:**
+
+macOS / Linux:
+
+```bash
+mkdir -p ~/.claude/skills
+mv ~/.agents/skills/* ~/.claude/skills/
+```
+
+Windows (PowerShell):
+
+```powershell
+New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.claude\skills"
+Get-ChildItem -Path "$env:USERPROFILE\.agents\skills\*" | Move-Item -Destination "$env:USERPROFILE\.claude\skills\" -Force
+```
+
+**3. Restart Claude Code** — it won't discover the folders while running:
+
+1. Type `exit` in the active Claude Code session.
+2. Restart with `claude`.
+3. Type `/` and confirm `sdlc-orchestrator` now appears in the completion menu.
+
+**Prevent it next time** — target Claude Code explicitly on install:
+
+```bash
+npx skills add github:Itskindastrange/sdlc-orchestrator --agent=claude-code
+```
 
 ---
 
