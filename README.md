@@ -156,3 +156,33 @@ sdlc-orchestrator/
 ├── DEPENDENCIES.md
 └── README.md
 ```
+
+---
+
+## Contributing
+
+This project is **open source and open for contribution**. The workflow is a work in progress — feedback, fixes, and ideas are all welcome.
+
+Found a bug, a rough edge, or have an idea to make the SDLC flow better?
+
+- **Open an issue** — [github.com/Itskindastrange/sdlc-orchestrator/issues](https://github.com/Itskindastrange/sdlc-orchestrator/issues)
+- **Send a pull request** — fork, branch, change, PR
+- **Reach out directly** — abdullahahmaddd789@gmail.com
+
+I'm actively looking to improve this workflow, so don't hesitate to suggest changes — big or small.
+
+## Support
+
+If this saved you time or made your build process cleaner:
+
+- ⭐ **Star the repo** — it helps others find it
+- 🔁 **Share it** with other Claude Code users
+- 💬 **Tell me what worked and what didn't** — real usage feedback is the most valuable thing you can send
+
+Thanks for checking it out.
+
+---
+
+## License
+
+MIT — free to use, modify, and share. The six skills in this repo are original work. The `superpowers` plugin is a separate project by [obra](https://github.com/obra/superpowers), under its own license.
