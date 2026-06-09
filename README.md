@@ -183,6 +183,13 @@ Thanks for checking it out.
 
 ---
 
+## Credits
+
+- **`devils-advocate`** is based on the original skill by **[Jean Kang](https://www.linkedin.com/in/advicewithjean)**, modified and extended here with additional sub-modes and personal workflow tweaks. Full credit to Jean for the original concept and design.
+- **`superpowers`** (a runtime dependency, not bundled here) is by **[obra / Jesse Vincent](https://github.com/obra/superpowers)**.
+
 ## License
 
-MIT — free to use, modify, and share. The six skills in this repo are original work. The `superpowers` plugin is a separate project by [obra](https://github.com/obra/superpowers), under its own license.
+MIT — free to use, modify, and share.
+
+Most skills in this repo are original work; `devils-advocate` is a derivative of Jean Kang's skill (see Credits). The `superpowers` plugin is a separate project by [obra](https://github.com/obra/superpowers), under its own license.
