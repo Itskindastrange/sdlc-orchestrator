@@ -28,7 +28,7 @@ npx skills add superpowers
 
 ## Skills Provided by This Repo
 
-These are bundled here — no separate install needed once you run `npx skills add github:Itskindastrange/claude-skills`.
+These are bundled here — no separate install needed once you run `npx skills add github:Itskindastrange/sdlc-orchestrator`.
 
 | Skill | Role in SDLC |
 |-------|-------------|

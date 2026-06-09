@@ -1,5 +1,5 @@
 {
-  "name": "abdullah-skills",
+  "name": "sdlc-orchestrator",
   "version": "1.0.0",
   "description": "SDLC orchestrator skill cluster for Claude Code — drives a feature from idea to ship via PRD, EDD, QA, and devils-advocate gates.",
   "dependencies": [

@@ -1,4 +1,4 @@
-# claude-skills
+# sdlc-orchestrator
 
 The **SDLC orchestrator** skill cluster for Claude Code — drives a feature from idea → PRD → architecture → execution → QA → ship, triggering the right skill at each phase.
 
@@ -13,7 +13,7 @@ npx skills add superpowers
 **2. Install this plugin:**
 
 ```bash
-npx skills add github:Itskindastrange/claude-skills
+npx skills add github:Itskindastrange/sdlc-orchestrator
 ```
 
 **3. Verify install — open Claude Code and check these skills are listed:**
@@ -72,7 +72,7 @@ Trigger with the word `COMPACT` — summarizes the conversation into a structure
 ## Structure
 
 ```
-claude-skills/
+sdlc-orchestrator/
 ├── .claude-plugin/
 │   └── plugin.json         ← plugin metadata + dependency declarations
 ├── skills/
