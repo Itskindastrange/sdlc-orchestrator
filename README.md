@@ -4,19 +4,41 @@ The **SDLC orchestrator** skill cluster for Claude Code — drives a feature fro
 
 ## Install
 
-**1. Install official plugin dependencies first:**
+### Step 1 — Install the `superpowers` dependency
 
-```bash
-npx skills add superpowers
+This cluster depends on [obra/superpowers](https://github.com/obra/superpowers). Install it first, inside Claude Code.
+
+Register the marketplace:
+
+```
+/plugin marketplace add obra/superpowers-marketplace
 ```
 
-**2. Install this plugin:**
+Install the plugin:
+
+```
+/plugin install superpowers@superpowers-marketplace
+```
+
+Reload plugins:
+
+```
+/reload-plugins
+```
+
+### Step 2 — Install this plugin
+
+In your terminal:
 
 ```bash
 npx skills add github:Itskindastrange/sdlc-orchestrator
 ```
 
-**3. Verify install — open Claude Code and check these skills are listed:**
+When prompted to choose which skills to install, press **spacebar** to select, and select **all** of them.
+
+### Step 3 — Verify
+
+Open Claude Code and check these skills are listed:
 
 - From this repo: `sdlc-orchestrator`, `prd-writer`, `design-doc-writer`, `qa-plan-writer`, `devils-advocate`, `compact`
 - From superpowers: `brainstorming`, `writing-plans`, `executing-plans`, `test-driven-development`, `finishing-a-development-branch`

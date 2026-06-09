@@ -4,10 +4,14 @@ Skills in this repo that depend on external plugins. Install these before using 
 
 ## Required Plugins
 
-### `superpowers` (by Anthropic)
+### `superpowers` (by [obra](https://github.com/obra/superpowers))
 
-```bash
-npx skills add superpowers
+Install inside Claude Code:
+
+```
+/plugin marketplace add obra/superpowers-marketplace
+/plugin install superpowers@superpowers-marketplace
+/reload-plugins
 ```
 
 | Skill | Used In |
